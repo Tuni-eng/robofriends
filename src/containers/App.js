@@ -4,7 +4,7 @@ import SearchBox from '../components/SearchBox';
 //import { robots } from './robots'; // qe te kemi akses tek robots.js
 import Scroll from '../components/Scroll';
 import './App.css';
-import ErrorBoundry from '../components/ErrorBoundry'; //nese shkrujam dicka q sesh ne faqe kjo i kap 
+
  
 class App extends Component {
 	constructor() {    //constructor perdoret kur deklarojm State
@@ -36,9 +36,7 @@ class App extends Component {
 					<h1 className='f2'>RoboFriends</h1>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
-						<ErrorBoundry>
 							<CardList robots={filteredRobots}/> 
-                        </ErrorBoundry>
                     </Scroll>	
 			    </div>
 			);
