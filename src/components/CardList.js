@@ -2,9 +2,6 @@ import React from 'react';
 import Card from './Card';
 
 const CardList = ({ robots }) => {
-	//if (true) {
-	//	throw new Error ('Noooo');
-	//}
 	//const CardComponent = robots.map((user, i) => { //sepse cdo map ka dhe nje vlere parametri mrapa
 	// 	return (
 	// 		<Card
